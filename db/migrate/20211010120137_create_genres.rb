@@ -4,7 +4,7 @@ class CreateGenres < ActiveRecord::Migration[5.2]
       
       t.string :name,null:false
 
-      t.timestamps.  null:false
+      t.timestamps   null:false
     end
   end
 end
