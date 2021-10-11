@@ -26,7 +26,7 @@
       <%@genres.each do |genres|%>
       <tr>
         <td><%=genres.name%></td>
-        <%=link_to '編集',edit_admin_genre,class:"btn btn-success"%>
+        <td><%=link_to '編集する',edit_admin_genre_path(genres.id),class:"btn btn-success"%></td>
       </tr>
       <%end%>
     </tbody>
