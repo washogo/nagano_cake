@@ -3286,3 +3286,1030 @@ Processing by Admin::GenresController#index as HTML
 Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:02:20 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 258ms (Views: 252.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:02:24 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:02:25 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (137.4ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `genre_path' for #<#<Class:0x00000000046d4620>:0x00007f5ee4049260>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:@genre,local:true do |f|%>
+    10:         <div class="form-group">
+    11:           <label class="form-controll col-2">ジャンル名</label>
+    12:           <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/edit.html.erb:9:in `_app_views_admin_genres_edit_html_erb___1935881783461163541_70022764580200'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:06:06 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admin/genres", :id=>nil}, missing required keys: [:id]):
+    26:       <%@genres.each do |genres|%>
+    27:       <tr>
+    28:         <td><%=genres.name%></td>
+    29:         <td><%=link_to '編集する',edit_admin_genre_path(@genre),class:"btn btn-success"%></td>
+    30:       </tr>
+    31:       <%end%>
+    32:     </tbody>
+  
+app/views/admin/genres/index.html.erb:29:in `block in _app_views_admin_genres_index_html_erb__4607877473516589209_70022697398720'
+app/views/admin/genres/index.html.erb:26:in `_app_views_admin_genres_index_html_erb__4607877473516589209_70022697398720'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:06:24 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:06:27 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:06:29 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (155.5ms)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `genre_path' for #<#<Class:0x00000000046d4620>:0x00007f5ef0433c98>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:@genre,local:true do |f|%>
+    10:         <div class="form-group">
+    11:           <label class="form-controll col-2">ジャンル名</label>
+    12:           <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/edit.html.erb:9:in `_app_views_admin_genres_edit_html_erb___1935881783461163541_70022867206820'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:08:19 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    26:       <%@genres.each do |genres|%>
+    27:       <tr>
+    28:         <td><%=genres.name%></td>
+    29:         <td><%=link_to '編集する',edit_admin_genre_path(@genre.id),class:"btn btn-success"%></td>
+    30:       </tr>
+    31:       <%end%>
+    32:     </tbody>
+  
+app/views/admin/genres/index.html.erb:29:in `block in _app_views_admin_genres_index_html_erb__4607877473516589209_70022866501980'
+app/views/admin/genres/index.html.erb:26:in `_app_views_admin_genres_index_html_erb__4607877473516589209_70022866501980'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:15:04 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:15:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:15:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (130.4ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `genre_path' for #<#<Class:0x00000000046d4620>:0x00007f5eeabcc9d8>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:@genre,local:true do |f|%>
+    10:         <div class="form-group">
+    11:           <label class="form-controll col-2">ジャンル名</label>
+    12:           <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/edit.html.erb:9:in `_app_views_admin_genres_edit_html_erb___1935881783461163541_70022820948280'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:20:01 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (2.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 138ms (Views: 128.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:20:04 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 99ms (Views: 96.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:20:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:20:19 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [PATCH] "/admin/genres/1/edit"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:22:58 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [PATCH] "/admin/genres/1/edit"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:23:03 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:23:05 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:23:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:23:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [PATCH] "/admin/genres/1/edit"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:25:20 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:25:22 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:25:24 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:25:26 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [PATCH] "/admin/genres/1/edit"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:29:59 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 448ms (Views: 442.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:32:04 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:32:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:32:09 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (131.8ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `genres_path' for #<#<Class:0x000000000486c3c0>:0x00007fdcf16545c0>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:Genre,local:true do |f|%>
+    10:         <div class="form-group">
+    11:           <label class="form-controll col-2">ジャンル名</label>
+    12:           <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/edit.html.erb:9:in `_app_views_admin_genres_edit_html_erb___3574628956356211966_70293459742060'
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:32:50 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (143.0ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `genres_path' for #<#<Class:0x000000000486c3c0>:0x00007fdcf402eb98>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:Genre,local:true do |f|%>
+    10:         <div class="form-group">
+    11:           <label class="form-controll col-2">ジャンル名</label>
+    12:           <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/edit.html.erb:9:in `_app_views_admin_genres_edit_html_erb___3574628956356211966_70293481683440'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:32:55 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 82ms (Views: 81.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:32:57 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:32:59 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (120.5ms)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `genres_path' for #<#<Class:0x000000000486c3c0>:0x00007fdcf1a374a8>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:Genre,local:true do |f|%>
+    10:         <div class="form-group">
+    11:           <label class="form-controll col-2">ジャンル名</label>
+    12:           <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/edit.html.erb:9:in `_app_views_admin_genres_edit_html_erb___3574628956356211966_70293461756060'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:36:02 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:36:05 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:36:06 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/genres/1" for 14.10.113.65 at 2021-10-11 02:36:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9yHL9BnJIvYkcP6NGnYaEDjZwwzKDoVfR2+rNlHA0OM2SH3EvR2fGX7CFls3Cv27Oh23NmEqO720Be2wwDF0zA==", "genre"=>{"name"=>"ケーキ"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:19
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :genre, :commit, :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:36:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:36:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/genres/1" for 14.10.113.65 at 2021-10-11 02:36:15 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V2seK8ocHFYq88dTpLKaIm8Lm4ktUWWJ7HY6F9PnCgSWAqgbbsihuXBBL4WJzn2Jbc/vs4Z122sfHHyRQhauKw==", "genre"=>{"name"=>"プリン"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:19
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :genre, :commit, :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:36:15 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:36:40 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:36:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/genres/1" for 14.10.113.65 at 2021-10-11 02:36:52 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bln4bH0ziBvVTNM1n+7dczQWshK7jA82PnbpTM+jvi2vME5c2ec19I/+O+OykjrYNtLGKBCosdTNHK/KXlIaAg==", "genre"=>{"name"=>"プリン"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:19
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :genre, :commit, :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:36:52 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:37:21 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:37:24 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:37:25 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (119.1ms)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `genre_path' for #<#<Class:0x000000000486c3c0>:0x00007fdcf8103a10>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:@genre,method: :patch,local:true do |f|%>
+    10:         <div class="form-group">
+    11:           <label class="form-controll col-2">ジャンル名</label>
+    12:           <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/edit.html.erb:9:in `_app_views_admin_genres_edit_html_erb___3574628956356211966_70293515649360'
+Started GET "/" for 14.10.113.65 at 2021-10-11 02:43:32 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 14.10.113.65 at 2021-10-11 02:43:35 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 14.10.113.65 at 2021-10-11 02:43:49 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:43:58 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 414ms (Views: 412.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:44:00 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:44:02 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 127ms (Views: 122.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/genres/1" for 14.10.113.65 at 2021-10-11 02:44:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QKor2TnBNNQKZWMdNOM0rvN5tnfiEiLCk0E1dPq+QauBw53pnRWJO1DXi8sZn9MF8b3CTUk2nCBgK3Pya0/lhA==", "genre"=>{"name"=>"p"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:19
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :genre, :commit, :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:44:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 79ms (Views: 77.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:44:12 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 82ms (Views: 78.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:44:47 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/genres/1" for 14.10.113.65 at 2021-10-11 02:44:54 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6PJH424TQOphZH0Uu71+NqVqX4ek3gaZR1e+e4AA6lUpm/HTysf9BTvWlcKWwZmdp64rvQ/6uHu0Pfj9EfFOeg==", "genre"=>{"name"=>"ケーキ"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:44:54 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:44:56 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:15
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 80ms (Views: 77.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/genres/1" for 14.10.113.65 at 2021-10-11 02:45:01 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hqAsEd6ydBp66jwQItBe+ibnU+ieF/eSjGkyEImMmcdHyZohembJ9SBY1MYPrLlRJCMn0jUzSXB/A3SWGH096A==", "genre"=>{"name"=>"p"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+  [1m[36mGenre Update (3.0ms)[0m  [1m[33mUPDATE "genres" SET "name" = ?, "updated_at" = ? WHERE "genres"."id" = ?[0m  [["name", "p"], ["updated_at", "2021-10-11 02:45:01.379772"], ["id", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:20
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:20
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 18ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:45:01 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/genres" for 14.10.113.65 at 2021-10-11 02:45:12 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QlFYkN6lxGjQpg6ZvbREjil1FsI/GuAacs4kM9ZQPG8fyd89MMsg1qVebjs44qKw1HVOZ0OyC6r63rJ+zcWrrA==", "name"=>"プリン", "commit"=>"新規登録"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: genre):
+  
+app/controllers/admin/genres_controller.rb:27:in `genre_params'
+app/controllers/admin/genres_controller.rb:9:in `create'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:46:18 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered admin/genres/index.html.erb within layouts/application (152.2ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `genres_path' for #<#<Class:0x00007fc3b0383df0>:0x00007fc3b03824a0>):
+     6:   </div>
+     7:   <div class="row">
+     8:     <div class="col-10">
+     9:       <%=form_with model:@genre,local:true do |f|%>
+    10:       <div class="form-group">
+    11:         <label class="form-label col-2">ジャンル名</label>
+    12:         <%=f.text_field:name,class:"form-controll col-3 mr-5",placeholder:"ジャンル名"%>
+  
+app/views/admin/genres/index.html.erb:9:in `_app_views_admin_genres_index_html_erb__3570097055505915974_70239225897700'
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:47:36 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 110ms (Views: 109.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:47:38 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/genres" for 14.10.113.65 at 2021-10-11 02:47:43 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wC9YgqOPXFRqLejiTQiZyJlWL6jOD7pfg9zoiyHvSJydt98vTeG46h/ViEDIXn/2ZFZ3DbKnUe8LzH7GOnrfXw==", "genre"=>{"name"=>"プリン"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:9
+  [1m[36mGenre Create (1.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "プリン"], ["created_at", "2021-10-11 02:47:43.830904"], ["updated_at", "2021-10-11 02:47:43.830904"]]
+  ↳ app/controllers/admin/genres_controller.rb:9
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:9
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 11ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:47:44 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:47:45 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:14
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/genres/1" for 14.10.113.65 at 2021-10-11 02:47:58 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbJ+sCB73jgvJEXmeQjAG/W1XBOYzE4AeFRbFH4n/VhM28iAhK9j13WWrTBUdCew93EoKTPo8OKLPh2S79ZZdw==", "genre"=>{"name"=>"ケーキ"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:19
+  [1m[36mGenre Update (0.2ms)[0m  [1m[33mUPDATE "genres" SET "name" = ?, "updated_at" = ? WHERE "genres"."id" = ?[0m  [["name", "ケーキ"], ["updated_at", "2021-10-11 02:47:58.813699"], ["id", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:19
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:19
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/genres
+Completed 302 Found in 15ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:47:59 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/2/edit" for 14.10.113.65 at 2021-10-11 02:48:02 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:14
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 79ms (Views: 75.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:48:27 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:48:29 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres/1/edit" for 14.10.113.65 at 2021-10-11 02:48:30 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:14
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/genres" for 14.10.113.65 at 2021-10-11 02:48:49 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::GenresController#index as HTML
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:26
+  Rendered admin/genres/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.1ms)
+
+
