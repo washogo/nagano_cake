@@ -9857,3 +9857,519 @@ SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.ht
   
 app/views/admin/items/new.html.erb:25: syntax error, unexpected ':', expecting ')'
 app/views/admin/items/new.html.erb:25: syntax error, unexpected ',', expecting ')'
+Started GET "/" for 14.10.113.65 at 2021-10-12 02:52:28 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 02:52:38 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  Rendered admin/items/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:25: syntax error, unexpected ':', expecting ')'
+...enre,Genre.all,:id,:nameprompt:"--選択してください--...
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/admin/items/new.html.erb:25: syntax error, unexpected ',', expecting ')'
+..."--選択してください--",class:"col-5 form-controll");...
+...                              ^):
+  
+app/views/admin/items/new.html.erb:25: syntax error, unexpected ':', expecting ')'
+app/views/admin/items/new.html.erb:25: syntax error, unexpected ',', expecting ')'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:01:23 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 571ms (Views: 539.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:01:28 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:01:53 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L/e1rl/JJHeVL8huHWy9d6BNPMo3Gn41l3e4mb+QSx1ybzIDsafAyeDXqMyYOltJXU1kb0uylYUfZy7UpAXc3g==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe2e275e078 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15562-ddpzmy.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Genre(#44989920) expected, got "ケーキ" which is an instance of String(#19357160)):
+  
+app/controllers/admin/items_controller.rb:7:in `create'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:02:21 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 589ms (Views: 549.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:02:24 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:02:35 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OsJHTvANUESnWS8eEhi/4cwVgDhoASpsiCND5AQU4Ohc46w1a7R/2dlBB79HoTBejAOpZ0I7xk6MBtCi4XEQA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7c52591c50 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15702-11h18un.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Genre(#44281960) expected, got "ケーキ" which is an instance of String(#18546160)):
+  
+app/controllers/admin/items_controller.rb:7:in `create'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:03:35 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 89ms (Views: 75.6ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:03:41 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OsJHTvANUESnWS8eEhi/4cwVgDhoASpsiCND5AQU4Ohc46w1a7R/2dlBB79HoTBejAOpZ0I7xk6MBtCi4XEQA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7c52546700 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15702-gmldfi.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Unpermitted parameter: :genre
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/admin/items_controller.rb:27:in `item_params'
+app/controllers/admin/items_controller.rb:7:in `create'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:04:14 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 107ms (Views: 75.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:04:18 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OsJHTvANUESnWS8eEhi/4cwVgDhoASpsiCND5AQU4Ohc46w1a7R/2dlBB79HoTBejAOpZ0I7xk6MBtCi4XEQA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7c51ff1ac0 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15702-z1omy5.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Unpermitted parameter: :genre
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:8
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/items
+Completed 302 Found in 10ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-12 03:04:19 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Admin::ItemsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.6) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.6) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.6) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.6) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.6) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.6) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.6) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:04:45 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 101ms (Views: 89.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:04:50 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OsJHTvANUESnWS8eEhi/4cwVgDhoASpsiCND5AQU4Ohc46w1a7R/2dlBB79HoTBejAOpZ0I7xk6MBtCi4XEQA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7c51f72b08 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15702-1g2txnd.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Unpermitted parameter: :genre
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:8
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/items
+Completed 302 Found in 8ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-12 03:04:50 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+Completed 406 Not Acceptable in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Admin::ItemsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.6) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.6) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.6) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.6) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.6) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.6) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.6) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:05:05 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 106ms (Views: 91.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:05:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OsJHTvANUESnWS8eEhi/4cwVgDhoASpsiCND5AQU4Ohc46w1a7R/2dlBB79HoTBejAOpZ0I7xk6MBtCi4XEQA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7c51f32df0 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15702-23ercj.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Genre(#70085983397760) expected, got "ケーキ" which is an instance of String(#18546160)):
+  
+app/controllers/admin/items_controller.rb:7:in `create'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:06:01 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 115ms (Views: 89.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:06:06 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OsJHTvANUESnWS8eEhi/4cwVgDhoASpsiCND5AQU4Ohc46w1a7R/2dlBB79HoTBejAOpZ0I7xk6MBtCi4XEQA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7c52292720 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15702-8dm5tq.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/admin/items_controller.rb:27:in `item_params'
+app/controllers/admin/items_controller.rb:7:in `create'
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:07:22 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 110ms (Views: 79.2ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:07:28 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OsJHTvANUESnWS8eEhi/4cwVgDhoASpsiCND5AQU4Ohc46w1a7R/2dlBB79HoTBejAOpZ0I7xk6MBtCi4XEQA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7c522e92f0 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-15702-19k15b3.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre"=>"ケーキ", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Genre(#70085954013820) expected, got "ケーキ" which is an instance of String(#18546160)):
+  
+app/controllers/admin/items_controller.rb:7:in `create'
+Started GET "/" for 14.10.113.65 at 2021-10-12 03:44:32 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:44:50 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 509ms (Views: 494.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/items/new" for 14.10.113.65 at 2021-10-12 03:44:53 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#new as HTML
+  Rendering admin/items/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/items/new.html.erb:25
+  Rendered admin/items/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/admin/items" for 14.10.113.65 at 2021-10-12 03:45:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cAPrKhZwB6zgXSFSBiybATBuyRmAvJpDizKxcbqJRVstm2yH+B7jEpWlQfCDen0/zW6RvPwUcfMDIic8oRzSmA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f969dec4f38 @tempfile=#<Tempfile:/tmp/RackMultipart20211012-18618-r5noyw.png>, @original_filename="rails_logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"rails_logo.png\"\r\nContent-Type: image/png\r\n">, "name"=>"a", "introduction"=>"a", "genre_id"=>"1", "price"=>"1", "is_active"=>"0"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:8
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:8
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("genre_id", "name", "image_id", "introduction", "price", "is_active", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "a"], ["image_id", "b2b58e74da58b9bc947e238cb88149aab9443c4567e6b552b5f3edea6517"], ["introduction", "a"], ["price", 1], ["is_active", 0], ["created_at", "2021-10-12 03:45:07.425280"], ["updated_at", "2021-10-12 03:45:07.425280"]]
+  ↳ app/controllers/admin/items_controller.rb:8
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/items_controller.rb:8
+Redirected to https://9b0d064c14f74339b274e867104154bc.vfs.cloud9.us-east-1.amazonaws.com/admin/items
+Completed 302 Found in 26ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-12 03:45:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Admin::ItemsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.6) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.6) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.6) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.6) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.6) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.6) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.6) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'

@@ -22,7 +22,7 @@
         </div>
         <div class="row mt-2">
           <label class="col-3 form-controll">ジャンル</label>
-          <%=f.collection_select:genre,Genre.all,:id,:nameprompt:"--選択してください--",class:"col-5 form-controll"%>
+          <%=f.collection_select:genre_id,Genre.all,:id,:name,prompt: "--選択してください--",class:"form-controll"%>
         </div>
         <div class="row mt-2">
           <label class="col-3 form-controll">税抜価格</label>

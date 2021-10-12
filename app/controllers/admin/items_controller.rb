@@ -10,6 +10,7 @@ class Admin::ItemsController < ApplicationController
   end 
   
   def index
+    
   end 
   
   def show
@@ -24,7 +25,7 @@ class Admin::ItemsController < ApplicationController
   private
   
   def item_params
-    params.require(:item).permit(:image,:name,:introduction,:genre,:price,:is_active).merge(params[:item][:genre_id])
+    params.require(:item).permit(:image,:name,:introduction,:genre_id,:price,:is_active)
   end
   
 end
