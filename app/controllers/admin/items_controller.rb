@@ -21,13 +21,10 @@ class Admin::ItemsController < ApplicationController
   def update
   end 
   
-  def new
-  end
-  
   private
   
   def item_params
-    params.require(:item).permit(:image,:name,:introduction,:genre,:price,:is_active)
+    params.require(:item).permit(:image,:name,:introduction,:genre,:price,:is_active).merge(params[:item][:genre_id])
   end
   
 end
