@@ -30,8 +30,8 @@
         </div>
         <div class="row mt-2">
           <label class="col-3 form-controll">販売ステータス</label>
-          <%=f.check_box:is_active,{checked:true},value:true,class:"form-controll"%>販売中
-          <%=f.check_box:is_active,{checked:nil},value:false,class:"form-controll"%>販売停止中
+          <%=f.radio_button:is_active,:true,class:"form-controll"%>販売中
+          <%=f.radio_button:is_active,:false,class:"form-controll"%>販売停止中
         </div>
         <div class="row">
           <%=f.submit "新規登録",class:"btn btn-success"%>
