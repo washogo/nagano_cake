@@ -11863,3 +11863,293 @@ Processing by Admin::ItemsController#index as HTML
 Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:26:12 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (81.1ms)
+Completed 200 OK in 743ms (Views: 727.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:26:19 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:26:20 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 96ms (Views: 94.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:28:05 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 145ms (Views: 140.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:28:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 115ms (Views: 112.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:28:41 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:28:43 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 115ms (Views: 112.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:29:00 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/items" for 14.10.113.65 at 2021-10-13 08:29:02 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/items/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/items/index.html.erb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:38
+  Rendered admin/items/index.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.6ms)
+
+
