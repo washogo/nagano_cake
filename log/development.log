@@ -20012,3 +20012,58 @@ Processing by Public::HomesController#about as HTML
 Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateCustomers (20211016034457)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211016034457_devise_create_customers.rb:5
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "last_name" varchar NOT NULL, "first_name" varchar NOT NULL, "last_name_kana" varchar NOT NULL, "first_name_kana" varchar NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "telephone_number" varchar NOT NULL, "is_active" boolean DEFAULT 1 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime DEFAULT NULL NOT NULL, "updated_at" datetime DEFAULT NULL NOT NULL)[0m
+  ↳ db/migrate/20211016034457_devise_create_customers.rb:5
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_customers_on_email" ON "customers" ("email")[0m
+  ↳ db/migrate/20211016034457_devise_create_customers.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_customers_on_reset_password_token" ON "customers" ("reset_password_token")[0m
+  ↳ db/migrate/20211016034457_devise_create_customers.rb:48
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211016034457"]]
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/about" for 14.10.113.65 at 2021-10-16 04:00:31 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 727ms (Views: 667.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_up" for 14.10.113.65 at 2021-10-16 04:01:00 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 227ms (Views: 169.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/customers/sign_up" for 14.10.113.65 at 2021-10-16 04:01:02 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.0ms)
+
+

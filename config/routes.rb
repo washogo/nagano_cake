@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :customers
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :admin do
     resources :sessions,only:[:new,:create,:destroy]
@@ -10,6 +9,7 @@ Rails.application.routes.draw do
   scope module: :public do
     root to: 'homes#top'
     get '/about',to:'homes#about'
+    devise_for :customers
   
   end 
   
