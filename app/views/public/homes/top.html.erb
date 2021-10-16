@@ -1,13 +1,33 @@
 <div class="container">
   <div class="row">
-    <div class="col-10">
-      
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-10">
-      
+    <div class="col-11 offset-md-2">
+      <div class="col-8 border border-dark mt-5 p-5 image_top">
+        <div class="col-7 mx-auto mt-4 border border-dark shadow-lg">
+          <p>ようこそ、ながのCAKEへ！</br>
+            このサイトは、ケーキ販売のECサイトになります。</br>
+            会員でない方も商品の閲覧はできますが、</br>
+            購入には会員登録が必要になります。
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="h2 m-3">新着商品</p>
+      </div>
+      <div class="row d-flex flex-row">
+        <% @items.first(4).each do |items|%>
+          <div class="col-2 m-3">
+            <div class="row">
+             <%=attachment_image_tag items,:image,:fill,150,100%>
+            </div>
+            <div class="row">
+              <%=items.name%>
+            </div>
+            <div class="row">
+              ¥<%=addTax(items.price,1.08).to_s(:delimited)%>
+            </div>
+          </div>
+        <%end%>
+      </div>
     </div>
   </div>
 </div>
-  

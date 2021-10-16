@@ -6,10 +6,10 @@ Rails.application.routes.draw do
     resources :items,except:[:destroy]
   end
   
-  root to: 'homes#top'
-  get '/about',to:'homes#about'
- 
-  namespace :public do
+  scope module: :public do
+    root to: 'homes#top'
+    get '/about',to:'homes#about'
+  
   end 
   
 end
