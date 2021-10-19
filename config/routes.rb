@@ -7,10 +7,8 @@ Rails.application.routes.draw do
   end
   
   scope module: :public do
+    devise_for :customers
     root to: 'homes#top'
     get '/about',to:'homes#about'
-    devise_for :customers
-  
-  end 
-  
+  end
 end
