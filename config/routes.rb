@@ -4,7 +4,11 @@ Rails.application.routes.draw do
     devise_for :customers
     root to: 'homes#top'
     get '/about',to:'homes#about'
-    resources :customers,only:[:show,:edit,:update]
+    get '/current_customer',to:'customers#show'
+    get '/current_customer/edit',to:'customers#edit'
+    patch '/current_customer',to:'customers#update'
+    get '/current_customer/cancel',to:'customers#cancel'
+    get '/current_customer/quit',to:'customers#quit'
   end
   
   namespace :admin do
