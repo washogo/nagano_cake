@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     get '/current_customer/edit',to:'customers#edit'
     patch '/current_customer',to:'customers#update'
     get '/current_customer/cancel',to:'customers#cancel'
-    get '/current_customer/quit',to:'customers#quit'
+    patch '/current_customer/quit',to:'customers#quit'
   end
   
   namespace :admin do

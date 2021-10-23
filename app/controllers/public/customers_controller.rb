@@ -18,6 +18,9 @@ before_action :authenticate_customer!
   end
   
   def quit
+    @customer=current_customer
+    @customer.update(is_active: false)
+    redirect_to root_path
   end
   
   private
