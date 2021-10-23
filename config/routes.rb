@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     devise_for :customers
     root to: 'homes#top'
     get '/about',to:'homes#about'
+    resources :customers,only:[:show,:edit,:update]
   end
   
   namespace :admin do
