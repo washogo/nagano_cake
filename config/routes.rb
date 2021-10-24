@@ -9,8 +9,9 @@ Rails.application.routes.draw do
     patch '/current_customer',to:'customers#update'
     get '/current_customer/cancel',to:'customers#cancel'
     patch '/current_customer/quit',to:'customers#quit'
+    resources :addresses,only:[:index,:create,:edit,:update,:destroy]
   end
-  
+
   namespace :admin do
     resources :sessions,only:[:new,:create,:destroy]
     resources :genres,only:[:index,:create,:edit,:update]
