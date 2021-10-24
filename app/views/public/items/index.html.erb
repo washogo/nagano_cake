@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="d-flex flex-row mt-5 offset-md-2">
+    <p class="h3 font-weight-bold">商品一覧</p>
+    <p class="text-left mt-2">（全<%=Item.count%>件）</p>
+  </div>
+  <div class="row d-flex flex-row offset-md-2">
+  <% @items.each do |items|%>
+    <div class="col-2 m-3">
+      <div class="row">
+        <%=attachment_image_tag items,:image,:fill,150,100%>
+      </div>
+      <div class="row">
+        <%=items.name%>
+      </div>
+      <div class="row">
+        ¥<%=addTax(items.price,1.08).to_s(:delimited)%>
+      </div>
+    </div>
+  <%end%>
+  </div>
+  <div class="row">
+    <div class="col-2 mx-auto">
+      <%= paginate @items%>
+    </div>
+  </div>
+</div>

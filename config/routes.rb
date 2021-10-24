@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get '/current_customer/cancel',to:'customers#cancel'
     patch '/current_customer/quit',to:'customers#quit'
     resources :addresses,only:[:index,:create,:edit,:update,:destroy]
+    resources :items,only:[:show,:index]
   end
 
   namespace :admin do

@@ -31827,3 +31827,1185 @@ Processing by Public::AddressesController#index as HTML
 Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/addresses" for 14.10.113.65 at 2021-10-24 16:16:12 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Public::AddressesController#index as HTML
+  Rendering public/addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/public/addresses/index.html.erb:37
+  Rendered public/addresses/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 5363ms (Views: 5335.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:16:24 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (73.7ms)
+Completed 200 OK in 194ms (Views: 186.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:16:26 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/attachments/75adee3a101821e06d20663a8019df8795564a1d/store/fill/150/100/8e02bd3250ad2599c70ef97571c212bc2dac432b509edaf8fd70b3c8f1f9/image" for 14.10.113.65 at 2021-10-24 16:16:27 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/116f5b09296c7b5d730ab2b0625a84c5373f32f1/store/fill/150/100/8bdff307a3469adc6c07ee6d4a12fdf2d80ff0243c20bc6913aca3010c40/image" for 14.10.113.65 at 2021-10-24 16:16:27 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/127e6184d50236e047bb6f2c450beb43367cbf9f/store/fill/150/100/0e70a78d297d09b01ee5a09f84d85ca3f9341c7b42b3683d7ff4acd0cdd1/image" for 14.10.113.65 at 2021-10-24 16:16:27 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/0ed4dab18030f913141feeb12e6d7e1175ad86d3/store/fill/150/100/29d284d3b8afdbba3f67f4793d8e2bcb57d5f54177e07f94fc3e9bcc195d/image" for 14.10.113.65 at 2021-10-24 16:16:27 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 16:16:27 +0000] GET "/127e6184d50236e047bb6f2c450beb43367cbf9f/store/fill/150/100/0e70a78d297d09b01ee5a09f84d85ca3f9341c7b42b3683d7ff4acd0cdd1/image" 200 283.8ms
+
+Refile::App: [2021-10-24 16:16:27 +0000] GET "/116f5b09296c7b5d730ab2b0625a84c5373f32f1/store/fill/150/100/8bdff307a3469adc6c07ee6d4a12fdf2d80ff0243c20bc6913aca3010c40/image" 200 290.0ms
+
+Refile::App: [2021-10-24 16:16:27 +0000] GET "/75adee3a101821e06d20663a8019df8795564a1d/store/fill/150/100/8e02bd3250ad2599c70ef97571c212bc2dac432b509edaf8fd70b3c8f1f9/image" 200 295.8ms
+
+Refile::App: [2021-10-24 16:16:27 +0000] GET "/0ed4dab18030f913141feeb12e6d7e1175ad86d3/store/fill/150/100/29d284d3b8afdbba3f67f4793d8e2bcb57d5f54177e07f94fc3e9bcc195d/image" 200 288.7ms
+
+Started GET "/items?page=2" for 14.10.113.65 at 2021-10-24 16:16:45 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 8]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 8]]
+  ↳ app/views/public/items/index.html.erb:7
+  Rendered public/items/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 151ms (Views: 149.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/attachments/6cc81b47bd2ade3de52ee1ea13249d48878f33a5/store/fill/150/100/ca54bb2bd69c8656d6465fba061a8a5eb811c4cd6781cbc89579dfe553b3/image" for 14.10.113.65 at 2021-10-24 16:16:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/d8cf596c104d3a96870b855594da480ef207c816/store/fill/150/100/ca54858d0b5f54f779240bc6cd702f75a353c1247f3a6e25d659e5682d04/image" for 14.10.113.65 at 2021-10-24 16:16:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/aa41569df0d0e004f2a10d455a0d5a60d06e0773/store/fill/150/100/d4d51c293e945b477b845928876f5bf337da4c023e09b139cce83c3549a4/image" for 14.10.113.65 at 2021-10-24 16:16:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/fadc440bf81e7e02200dcf39279952137489e25b/store/fill/150/100/b2b58e74da58b9bc947e238cb88149aab9443c4567e6b552b5f3edea6517/image" for 14.10.113.65 at 2021-10-24 16:16:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 16:16:46 +0000] GET "/d8cf596c104d3a96870b855594da480ef207c816/store/fill/150/100/ca54858d0b5f54f779240bc6cd702f75a353c1247f3a6e25d659e5682d04/image" 200 154.6ms
+
+Refile::App: [2021-10-24 16:16:46 +0000] GET "/6cc81b47bd2ade3de52ee1ea13249d48878f33a5/store/fill/150/100/ca54bb2bd69c8656d6465fba061a8a5eb811c4cd6781cbc89579dfe553b3/image" 200 162.1ms
+
+Refile::App: [2021-10-24 16:16:46 +0000] GET "/fadc440bf81e7e02200dcf39279952137489e25b/store/fill/150/100/b2b58e74da58b9bc947e238cb88149aab9443c4567e6b552b5f3edea6517/image" 200 162.3ms
+
+Refile::App: [2021-10-24 16:16:46 +0000] GET "/aa41569df0d0e004f2a10d455a0d5a60d06e0773/store/fill/150/100/d4d51c293e945b477b845928876f5bf337da4c023e09b139cce83c3549a4/image" 200 191.3ms
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:16:48 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 163ms (Views: 161.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:17:32 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+  [1m[36mCACHE Item Load (0.0ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `per' for #<Item::ActiveRecord_Relation:0x00007fd9b0f54808>):
+  
+app/controllers/public/items_controller.rb:3:in `index'
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:17:45 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 133ms (Views: 126.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:17:49 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 133ms (Views: 131.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:17:51 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:17:53 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 166ms (Views: 163.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:17:56 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:18:19 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  Rendered public/items/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+...freeze;@output_buffer.append=(.count);@output_buffer.safe_ap...
+...                              ^):
+  
+app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:18:23 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  Rendered public/items/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+...freeze;@output_buffer.append=(.count);@output_buffer.safe_ap...
+...                              ^):
+  
+app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:18:24 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  Rendered public/items/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+...freeze;@output_buffer.append=(.count);@output_buffer.safe_ap...
+...                              ^):
+  
+app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:18:42 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  Rendered public/items/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 6.7ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+...freeze;@output_buffer.append=(.count);@output_buffer.safe_ap...
+...                              ^):
+  
+app/views/public/items/index.html.erb:4: syntax error, unexpected '.'
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:02 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 670ms (Views: 668.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:06 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 115ms (Views: 113.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:30 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:32 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:39 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 143ms (Views: 141.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:41 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 109ms (Views: 107.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:47 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 169ms (Views: 166.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:19:49 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 111ms (Views: 109.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:20:35 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:20:37 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 119ms (Views: 117.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:20:44 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 114ms (Views: 113.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:20:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 127ms (Views: 125.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:20:52 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:20:55 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 108ms (Views: 106.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:21:20 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 215ms (Views: 213.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:21:22 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 116ms (Views: 114.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:21:23 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:22:15 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:22:17 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 119ms (Views: 117.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:22:49 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 116ms (Views: 114.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:22:51 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:23:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:23:09 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:20
+  Rendered public/items/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 117ms (Views: 114.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/adc252b64f9732da0a04e29b45e3de5118fd247c/store/fill/200/100/dd0015e0c6e5a65715bade90a4ac7a9fd2c3385e61dd7fa85ec05c00d3f9/image" for 14.10.113.65 at 2021-10-24 16:23:09 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/db2cc275b8c0171cbfcc1792fc93d4107b070add/store/fill/200/100/cbdebec96a7a840e28c8b4d8e47070351a1250de9ca733b9ef6a4c3ef63d/image" for 14.10.113.65 at 2021-10-24 16:23:09 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/9a103f99fd6c2d81532dde909ef1df135be93004/store/fill/200/100/f9a642a779309d2a2d73ecd5edb03b542d8365188f4fc283e252ffc49f18/image" for 14.10.113.65 at 2021-10-24 16:23:09 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/09d57c494b0388803b9764b70f5d3717770cf1f5/store/fill/200/100/4064d669985d391b4d5e3f566d48c600a49998b86deec0a6384256dce3ee/image" for 14.10.113.65 at 2021-10-24 16:23:09 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/9605cb6a0b148ef86fce6270c07ff35a25fad903/store/fill/200/100/8e02bd3250ad2599c70ef97571c212bc2dac432b509edaf8fd70b3c8f1f9/image" for 14.10.113.65 at 2021-10-24 16:23:09 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/9605cb6a0b148ef86fce6270c07ff35a25fad903/store/fill/200/100/8e02bd3250ad2599c70ef97571c212bc2dac432b509edaf8fd70b3c8f1f9/image" 200 281.4ms
+
+Started GET "/attachments/0dacfc5528d2caf34d26e6c85e59323dfa3304c7/store/fill/200/100/8bdff307a3469adc6c07ee6d4a12fdf2d80ff0243c20bc6913aca3010c40/image" for 14.10.113.65 at 2021-10-24 16:23:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/09d57c494b0388803b9764b70f5d3717770cf1f5/store/fill/200/100/4064d669985d391b4d5e3f566d48c600a49998b86deec0a6384256dce3ee/image" 200 290.8ms
+
+Started GET "/attachments/f04fe7dac622281faf98ca9993679b320b4d03f6/store/fill/200/100/29d284d3b8afdbba3f67f4793d8e2bcb57d5f54177e07f94fc3e9bcc195d/image" for 14.10.113.65 at 2021-10-24 16:23:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/db2cc275b8c0171cbfcc1792fc93d4107b070add/store/fill/200/100/cbdebec96a7a840e28c8b4d8e47070351a1250de9ca733b9ef6a4c3ef63d/image" 200 302.0ms
+
+Started GET "/attachments/41584f18e6a6f4e86ac67e10e3a9c89f0b2814b4/store/fill/200/100/0e70a78d297d09b01ee5a09f84d85ca3f9341c7b42b3683d7ff4acd0cdd1/image" for 14.10.113.65 at 2021-10-24 16:23:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/9a103f99fd6c2d81532dde909ef1df135be93004/store/fill/200/100/f9a642a779309d2a2d73ecd5edb03b542d8365188f4fc283e252ffc49f18/image" 200 314.3ms
+
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/adc252b64f9732da0a04e29b45e3de5118fd247c/store/fill/200/100/dd0015e0c6e5a65715bade90a4ac7a9fd2c3385e61dd7fa85ec05c00d3f9/image" 200 323.5ms
+
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/0dacfc5528d2caf34d26e6c85e59323dfa3304c7/store/fill/200/100/8bdff307a3469adc6c07ee6d4a12fdf2d80ff0243c20bc6913aca3010c40/image" 200 140.3ms
+
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/f04fe7dac622281faf98ca9993679b320b4d03f6/store/fill/200/100/29d284d3b8afdbba3f67f4793d8e2bcb57d5f54177e07f94fc3e9bcc195d/image" 200 137.1ms
+
+Refile::App: [2021-10-24 16:23:10 +0000] GET "/41584f18e6a6f4e86ac67e10e3a9c89f0b2814b4/store/fill/200/100/0e70a78d297d09b01ee5a09f84d85ca3f9341c7b42b3683d7ff4acd0cdd1/image" 200 134.4ms
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:23:38 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:21
+  Rendered public/items/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 120ms (Views: 118.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:23:40 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:21
+  Rendered public/items/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 128ms (Views: 125.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:24:33 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 204ms (Views: 202.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:24:35 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:25:41 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 210ms (Views: 208.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:25:43 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 110ms (Views: 108.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:26:00 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 106ms (Views: 104.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:26:04 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 131ms (Views: 129.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:26:11 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:26:23 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 120ms (Views: 119.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:26:26 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 170ms (Views: 169.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:05 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 128ms (Views: 126.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:07 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:18 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 119ms (Views: 117.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:21 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 127ms (Views: 124.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:34 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:38 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 124ms (Views: 122.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:52 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:27:54 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 120ms (Views: 117.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:28:34 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:28:36 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:28:44 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 118ms (Views: 114.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:28:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:28:53 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:28:54 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:29:01 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 134ms (Views: 131.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:29:03 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:29:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 114ms (Views: 112.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:29:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 129ms (Views: 127.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:29:16 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 109ms (Views: 107.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:29:18 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 121ms (Views: 119.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:30:06 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:30:08 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 115ms (Views: 113.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:30:46 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 132ms (Views: 129.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:30:49 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 103ms (Views: 100.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:31:02 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 136ms (Views: 135.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:31:04 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 191ms (Views: 189.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:31:05 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 102ms (Views: 100.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:31:10 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 115ms (Views: 112.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:31:12 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 108ms (Views: 106.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?page=2" for 14.10.113.65 at 2021-10-24 16:31:28 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 8]]
+  ↳ app/views/public/items/index.html.erb:7
+  Rendered public/items/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 14.10.113.65 at 2021-10-24 16:31:30 +0000
+Cannot render console from 14.10.113.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 8], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:7
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:23
+  Rendered public/items/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 0.3ms)
+
+
