@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     patch '/current_customer/quit',to:'customers#quit'
     resources :addresses,only:[:index,:create,:edit,:update,:destroy]
     resources :items,only:[:show,:index]
+    resources :cart_items,except:[:new,:show,:edit]
+    delete '/cart_items/destroy_all',to:'cart_items#destroy_all'
   end
 
   namespace :admin do
