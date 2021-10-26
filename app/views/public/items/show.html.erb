@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-3">
+      <%=attachment_image_tag @item,:image,:fill,250,180, fallback:"no_image.jpeg"%>
+    </div>
+    <div class="col-7">
+      <div class="row">
+        <p class="h3 font-weight-bold"><%=@item.name%></p>
+      </div>
+      <div class="row">
+        <p class="h5"><%=@item.introduction%></p>
+      </div>
+      <div class="row pt-5 mt-4">
+        <p class="h4">¥<%=addTax(@item.price,1.08).to_s(:delimited)%></p>（税込）
+      </div>
+      <div class="row">
+
+      </div>
+    </div>
+  </div>
+</div>
