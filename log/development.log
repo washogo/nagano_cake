@@ -39489,3 +39489,212 @@ Processing by Public::CartItemsController#index as HTML
 Completed 200 OK in 129ms (Views: 127.6ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateOrders (20211029084826)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029084826_create_orders.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_mehod" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime DEFAULT NULL NOT NULL, "updated_at" datetime DEFAULT NULL NOT NULL)[0m
+  ↳ db/migrate/20211029084826_create_orders.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211029084826"]]
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeIsFlagDegaultOnOrders (20211029093828)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029093828_change_is_flag_degault_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029093828_change_is_flag_degault_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_mehod","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029093828_change_is_flag_degault_on_orders.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029093828_change_is_flag_degault_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029093828_change_is_flag_degault_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "aorders"[0m
+  ↳ db/migrate/20211029093828_change_is_flag_degault_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  ↳ db/migrate/20211029093828_change_is_flag_degault_on_orders.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211029093828"]]
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangePaymentMethodAndOrderedStatusDefaultOnOrders (20211029094352)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer DEFAULT NULL NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (4.6ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangePaymentMethodAndOrderedStatusDefaultOnOrders (20211029094352)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangePaymentMethodAndOrderedStatusDefaultOnOrders (20211029094352)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer DEFAULT 1 NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangePaymentMethodAndOrderedStatusDefaultOnOrders (20211029094352)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangePaymentMethodAndOrderedStatusDefaultOnOrders (20211029094352)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangePaymentMethodAndOrderedStatusDefaultOnOrders (20211029094352)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangePaymentMethodAndOrderedStatusDefaultOnOrders (20211029094352)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer DEFAULT 1 NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer DEFAULT 1 NOT NULL, "ordered_status" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "customer_id" integer NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "name" varchar NOT NULL, "postage" integer DEFAULT 800 NOT NULL, "billing_amount" integer NOT NULL, "payment_method" integer DEFAULT 1 NOT NULL, "ordered_status" integer DEFAULT 1 NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at")
+                     SELECT "id","customer_id","postal_code","address","name","postage","billing_amount","payment_method","ordered_status","created_at","updated_at" FROM "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  ↳ db/migrate/20211029094352_change_payment_method_and_ordered_status_default_on_orders.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211029094352"]]
+  ↳ bin/rails:9
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
