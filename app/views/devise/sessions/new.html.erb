@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-3 offset-md-1">
-     <p class="h3 bg-secondary m-5 text-center">ログイン</p> 
+     <p class="h3 bg-secondary m-5 text-center">ログイン</p>
     </div>
   </div>
   <div class="row">
@@ -9,12 +9,12 @@
       <p class="h5 bg-secondary mb-4 text-center">会員の方はこちらからログイン</p>
     </div>
   </div>
-  
+
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-group pb-5">
     <div class="row">
-    
-        <div class="col">  
+
+        <div class="col">
           <div class="row">
             <div class="col-7 mx-auto">
               <label class="col-3">メールアドレス</label>
@@ -31,7 +31,7 @@
             <%= f.submit "ログイン",class:"btn btn-primary offset-md-3 col-3" %>
           </div>
         </div>
-      
+
     </div>
   </div>
   <%end%>

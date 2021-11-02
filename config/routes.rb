@@ -13,10 +13,12 @@ Rails.application.routes.draw do
     resources :items,only:[:show,:index]
     resources :cart_items,except:[:new,:show,:edit]
     delete '/cart_items/destroy_all',to:'cart_items#destroy_all'
-    resources :orders,only:[:new,:index,:show]
-    get '/orders/completed',to:'orders#create'
-    get '/orders/:id',to:'orders#confirmation'
-    get '/orders/completed',to:'orders#completed'
+    resources :orders,only:[:new,:create,:index,:show] do
+      collection do
+        post 'confirmation'
+        get 'completed'
+      end
+    end
   end
 
   namespace :admin do
