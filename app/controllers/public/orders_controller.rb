@@ -3,17 +3,17 @@ class Public::OrdersController < ApplicationController
   def new
     @order=Order.new
     @customer=current_customer
+    @order.customer_id=@customer.id
     @addresses=Address.all
+   
   end
-  
+
   def confirmation
-    #byebug
-    @order=Order.new(order_params)
-    @order.customer_id=current_customer.id
+    @order=Order.new
   end
 
   def create
-    
+
     @order=Order.new(order_params)
     @order.customer_id=current_customer.id
     @order.save

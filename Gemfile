@@ -78,3 +78,6 @@ gem "refile-mini_magick"
 
 #decvise 導入
 gem 'devise'
+
+#enum_helpの導入
+gem "enum_help"
