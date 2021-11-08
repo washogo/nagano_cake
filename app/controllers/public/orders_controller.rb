@@ -32,6 +32,7 @@ class Public::OrdersController < ApplicationController
     @order=Order.new(order_params)
     @order.customer_id=current_customer.id
     @order.save
+    CartItem.destroy_al
     redirect_to orders_completed_path
   end
 
