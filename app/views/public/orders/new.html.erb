@@ -12,11 +12,11 @@
   <%=form_with model:@order,url:{action:'confirmation'},id:"form",local:true do |f|%>
   <div class="form-group form-check">
     <%=f.radio_button:payment_method,Order.payment_methods.key(1)%>
-    <%f.label :payment_method, Order.payment_methods_i18n[:credit_card]%>
+    <%=f.label :payment_method, Order.payment_methods_i18n[:credit_card]%>
   </div>
   <div class="form-group form-check">
     <%=f.radio_button:payment_method,Order.payment_methods.key(2)%>
-    <%f.label :payment_method, Order.payment_methods_i18n[:transfer]%>
+    <%=f.label :payment_method, Order.payment_methods_i18n[:transfer]%>
   </div>
   <div class="row mt-3">
     <div class="col">
@@ -27,11 +27,6 @@
   <div class="row">
     <%=f.radio_button:address_option,'0'%>
     <%=f.label "ご自身の住所"%>
-
-      <%=f.hidden_field:name,:value => @customer.full_name,id:"form"%>
-      <%=f.hidden_field:postal_code,:value => @customer.postal_code%>
-      <%=f.hidden_field:address,:value => @customer.address%>
-      <%=f.hidden_field:billing_amount,:value => 800%>
   </div>
   <div class="row">
     <%=f.radio_button:address_option,'1'%>
@@ -61,6 +56,6 @@
   <div class="row">
     <%=f.submit "確認画面へ進む"%>
   </div>
-
+    
   <%end%>
 </div>

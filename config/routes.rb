@@ -19,6 +19,7 @@ Rails.application.routes.draw do
         get 'completed'
       end
     end
+    get '/orders/completed',to:'orders#completed'
   end
 
   namespace :admin do
