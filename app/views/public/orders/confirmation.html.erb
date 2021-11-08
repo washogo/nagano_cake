@@ -89,6 +89,12 @@
       <%=f.hidden_field :payment_method,:value =>@order.payment_method%>
       <%=f.hidden_field :billing_amount,:value => sum + @order.postage%>
       <%=f.submit "注文を確定する",class:"btn btn-success col"%>
+      <%=f.fields_for :order_items do |i|%>
+        <%@cart_items.each do |cart_item|%>
+          <%=i.hidden_field :tax_included_price,:value => addTax(cart_item.item.price,1.08)%>
+          <%=i.hidden_field :quantity,:value => cart_item.amount%>
+        <%end%>
+      <%end%>
     <%end%>
     </div>
   </div>

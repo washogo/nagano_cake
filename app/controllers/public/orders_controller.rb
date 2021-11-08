@@ -11,8 +11,9 @@ class Public::OrdersController < ApplicationController
 
   def confirmation
     @order=Order.new(order_params)
+    @order.order_items.build
     @cart_items=CartItem.all
-    
+
     if params[:order][:address_option] == "0"
       @order.name=current_customer.first_name + current_customer.last_name
       @order.postal_code=current_customer.postal_code
@@ -25,14 +26,13 @@ class Public::OrdersController < ApplicationController
     end
 
   end
-  
+
 
   def create
     @order=Order.new(order_params)
     @order.customer_id=current_customer.id
     @order.save
     redirect_to orders_completed_path
-    byebug
   end
 
   def index
