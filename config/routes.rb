@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
+  # devise_for :admins
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :admins, path: 'admin', controllers: {
+    sessions:      'admin/sessions'
+  }
+
+  devise_for :customers, path: 'customers', controllers: {
+    sessions: 'public/sessions'
+  }
+
   scope module: :public do
-    devise_for :customers
     root to: 'homes#top'
     get '/about',to:'homes#about'
     get '/current_customer',to:'customers#show'
@@ -22,12 +30,8 @@ Rails.application.routes.draw do
     get '/orders/completed',to:'orders#completed'
   end
 
-  scope module: :admin do
-    get '/admin',to:'homes#top'
-  end
-
   namespace :admin do
-    resources :sessions,only:[:new,:create,:destroy]
+    root to: 'homes#top'
     resources :genres,only:[:index,:create,:edit,:update]
     resources :items,except:[:destroy]
     resources :customers,only:[:show,:index,:edit,:update]
