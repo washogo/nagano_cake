@@ -32,11 +32,21 @@ class Public::OrdersController < ApplicationController
     @order=Order.new(order_params)
     @order.customer_id=current_customer.id
     @order.save
-    CartItem.destroy_al
+    current_customer.cart_items.each do |cart_item|
+      @order_item=OrderItem.new
+      @order_item.tax_included_price=cart_item.item.withTax
+      @order_item.quantity=cart_item.amount
+      @order_item.order_id=@order.id
+      @order_item.item_id=cart_item.item_id
+      @order_item.save
+  end
+
+    CartItem.destroy_all
     redirect_to orders_completed_path
   end
 
   def index
+    @orders=Order.includes(:order_items).where(customer_id: current_customer.id)
   end
 
   def show

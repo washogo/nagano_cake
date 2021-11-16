@@ -22,10 +22,15 @@ Rails.application.routes.draw do
     get '/orders/completed',to:'orders#completed'
   end
 
+  scope module: :admin do
+    get '/admin',to:'homes#top'
+  end
+
   namespace :admin do
     resources :sessions,only:[:new,:create,:destroy]
     resources :genres,only:[:index,:create,:edit,:update]
     resources :items,except:[:destroy]
     resources :customers,only:[:show,:index,:edit,:update]
+    resources :orders,only:[:show,:update]
   end
 end
