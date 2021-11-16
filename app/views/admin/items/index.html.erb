@@ -1,9 +1,10 @@
 <%=render 'admin/header_log_in'%>
 <div class="container">
-  <div class="row">
+  <div class="row d-flex justify-content-between">
     <div class="col-2">
      <p class="h5 bg-secondary m-4 text-center">商品一覧</p>
     </div>
+    <%=link_to "", new_admin_item_path, class:"fas fa-plus-circle fa-3x col-2 p-4", style:"color:gray"%>
   </div>
   <div class="row">
     <table class="table col-10 mx-auto table-bordered-bottom">
