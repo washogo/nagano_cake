@@ -9,7 +9,12 @@ ja:
         payment_confirmation: '入金確認'
         in_production: '制作中'
         preparing_delivery: '発送準備中'
-
+    order_item:
+      making_status:
+        production_pending: '制作待ち'
+        in_production: '製作中'
+        production_complete: '制作完了'
+        production_not_possible: '制作不可'
 
 #ja: # 日本語の設定を行う
   #enums: # enumの設定を行う

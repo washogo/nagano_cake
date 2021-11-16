@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <p class="col-3 font-weight-bold">購入者</p>
-    <%=link_to @order.name,admin_customer_path(@order.customer_id)%>
+    <%=link_to @order.name,admin_customer_path(@order.customer_id),class:"text-dark"%>
   </div>
   <div class="row">
     <p class="col-3 font-weight-bold">注文日</p>
@@ -30,7 +30,7 @@
     <%end%>
   </div>
   <div class="row">
-    <table class="table table-border">
+    <table class="table table-border col-10">
       <thead>
         <tr>
           <th>商品名</th>
@@ -40,11 +40,41 @@
           <th>制作ステータス</th>
         </tr>
       </thead>
+      <%@order.order_items.each do |order_item|%>
       <tbody>
         <tr>
-          
+          <td><%=order_item.item.name%></td>
+          <td><%=order_item.tax_included_price.to_s(:delimited)%></td>
+          <td><%=order_item.quantity%></td>
+          <td><%=subtotal(order_item.tax_included_price,order_item.quantity)%></td>
+          <td>
+          <%=form_with model: @order, url: admin_order_path(@order.id), local:true do |f|%>
+            <%=f.fields_for :order_item do |order_item_form| %>
+              <%= order_item_form.select :making_status, { '制作待ち':'production_pending', '製作中':'in_production', '制作完了':'production_complete', '制作不可':'production_not_possible'}, {selected: 'production_not_possible'}%>
+              <%= order_item_form.hidden_field :id, value: order_item.id %>
+              <%= f.submit "更新",class:"btn btn-success"%>
+            <%end%>
+          <%end%>
+          </td>
         </tr>
       </tbody>
+      <%end%>
     </table>
+    <div class="d-flex align-items-baseline">
+      <div class="col mt-auto">
+        <div class="row">
+          <p class="font-weight-bold">商品合計</p>
+          <%=@order.billing_amount - @order.postage%>円
+        </div>
+        <div class="row">
+          <p class="font-weight-bold">送料</p>
+          <%=@order.postage%>円
+        </div>
+        <div class="row">
+          <p class="font-weight-bold">請求金額合計</p>
+          <p class="font-weight-bold"><%=@order.billing_amount%>円</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

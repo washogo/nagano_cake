@@ -26,7 +26,7 @@
             <%=cart_item.item.name%>
           </td>
           <td>
-            <%=addTax(cart_item.item.price,1.08).to_s(:delimited)%>
+            <%=addTax(cart_item.item.price,1.1).to_s(:delimited)%>
           </td>
           <td>
           <%=form_with model:cart_item,local:true do |f|%>
@@ -35,7 +35,7 @@
           <%end%>
           </td>
           <td>
-            <%=subtotal(addTax(cart_item.item.price,1.08),cart_item.amount).to_s(:delimited)%>
+            <%=subtotal(addTax(cart_item.item.price,1.1),cart_item.amount).to_s(:delimited)%>
           </td>
           <td>
             <%=link_to "削除する","/cart_items/#{cart_item.id}",method: :delete,class:"btn btn-danger"%>
@@ -56,7 +56,7 @@
           <td>
             <%sum=0%>
             <%@cart_items.each do |cart_item|%>
-              <%sum+=subtotal(addTax(cart_item.item.price,1.08),cart_item.amount)%>
+              <%sum+=subtotal(addTax(cart_item.item.price,1.1),cart_item.amount)%>
             <%end%>
             <%=sum.to_s(:delimited)%>
           </td>

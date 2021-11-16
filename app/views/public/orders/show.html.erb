@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <p class="h3 bg-light m-5">注文履歴詳細</p>
+  </div>
+  <div class="">
+    <p class="font-weight-bold">注文情報</p>
+    <table class="table table-bordered col-8">
+      <tr>
+        <th class="bg-light">注文日</th>
+        <td><%=@order.created_at.strftime("%Y/%M/%D")%></td>
+      </tr>
+      <tr>
+        <th class="bg-light">配送先</th>
+      </tr>
+      <tr>
+        <th class="bg-light">支払方法</th>
+      </tr>
+      <tr>
+        <th class="bg-light">ステータス</th>
+      </tr>
+    </table>
+  </div>
+</div>
