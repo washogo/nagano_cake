@@ -72,12 +72,13 @@ gem 'kaminari','~>1.2.1'
 #FontAwesome　導入
 gem 'font-awesome-sass','~>5.13'
 
-#refile 導入
-gem "refile", require: "refile/rails", github: 'manfe/refile'
-gem "refile-mini_magick"
-
 #decvise 導入
 gem 'devise'
 
 #enum_helpの導入
 gem "enum_help"
+
+#refile 導入
+gem "refile", require:"refile/rails", github:'manfe/refile'
+gem "refile-mini_magick"
+
