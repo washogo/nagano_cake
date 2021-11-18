@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   # devise_for :admins
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  devise_for :admins, path: 'admin', controllers: {
-    sessions:      'admin/sessions'
+  devise_for :customers, path: 'customers', controllers: {
+    sessions: 'public/sessions',
+    registrations: 'public/registrations'
   }
 
-  devise_for :customers, path: 'customers', controllers: {
-    sessions: 'public/sessions'
+  devise_for :admins, path: 'admin', controllers: {
+    sessions: 'admin/sessions'
   }
 
   scope module: :public do
