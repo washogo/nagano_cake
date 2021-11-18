@@ -10,8 +10,16 @@ before_action :correct_customer, only:[:update]
     @cart_item.customer_id=current_customer.id
     @item=Item.find(params[:cart_item][:item_id])
     @cart_item.item_id=@item.id
-    @cart_item.save
-    redirect_to cart_items_path
+
+    if CartItem.find_by(item_id: @item.id)
+      @cart_item_present=CartItem.find_by(item_id: @item.id)
+      _amounts = @cart_item_present.amount + @cart_item.amount.to_i
+      @cart_item_present.update_attribute(:amount, _amounts)
+    else
+      @cart_item.save
+    end
+      redirect_to cart_items_path
+
   end
 
   def update
@@ -35,7 +43,7 @@ before_action :correct_customer, only:[:update]
   private
 
   def cart_item_params
-    params.require(:cart_item).permit(:amount)
+    params.require(:cart_item).permit(:amount, :item_id)
   end
 
   def correct_customer

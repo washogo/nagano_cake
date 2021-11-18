@@ -4,15 +4,13 @@ class Public::OrdersController < ApplicationController
     @order=Order.new
     @customer=current_customer
     @order.customer_id=@customer.id
-    @addresses=Address.all
-    @cart_items=CartItem.all
-
+    @addresses=Address.where(customer_id: current_customer.id)
   end
 
   def confirmation
     @order=Order.new(order_params)
     @order.order_items.build
-    @cart_items=CartItem.all
+    @cart_items=CartItem.where(customer_id: current_customer.id)
 
     if params[:order][:address_option] == "0"
       @order.name=current_customer.first_name + current_customer.last_name
