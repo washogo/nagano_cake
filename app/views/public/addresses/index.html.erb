@@ -36,6 +36,7 @@
           </tr>
         </thead>
         <% @addresses.each do |address| %>
+        <%if address.customer_id == current_customer.id%>
         <tbody>
           <tr>
             <td><%=address.postal_code%></td>
@@ -47,6 +48,7 @@
             </td>
           </tr>
         </tbody>
+        <%end%>
         <%end%>
       </table>
     </div>

@@ -1,4 +1,6 @@
 class Public::AddressesController < ApplicationController
+before_action :authenticate_customer!
+before_action :correct_customer, only:[:new,:create,:edit,:update,:destroy]
   def index
     @address=Address.new
     @addresses=Address.all
@@ -13,6 +15,11 @@ class Public::AddressesController < ApplicationController
 
   def edit
     @address=Address.find(params[:id])
+    if @address.customer_id == current_customer
+      redirect_to address_path(@address.id)
+    else
+      render :edit
+    end
   end
 
   def update
@@ -33,4 +40,8 @@ class Public::AddressesController < ApplicationController
     params.require(:address).permit(:postal_code,:address,:name)
   end
 
+  def correct_customer
+    @address = Address.find(params[:id])
+    redirect_to root_path unless @address.customer_id == current_customer.id
+  end
 end
