@@ -26,7 +26,8 @@
   <div class="row">
     <p class="col-3 font-weight-bold">注文ステータス</p>
     <%=form_with model: @order, url: admin_order_path(@order.id), local:true do |f|%>
-      <%= f.select :ordered_status, {'入金待ち': 'payment_waiting','入金確認': 'payment_confirmation','制作中': 'in_production','発送準備中': 'preparing_delivery'}, {selected: 1}%>
+      <%= f.select :ordered_status, {'入金待ち': 'payment_waiting','入金確認': 'payment_confirmation','制作中': 'in_production','発送準備中': 'preparing_delivery','発送済み': 'delivered'}, {prompt: 1}%>
+
       <%= f.submit "更新",class:"btn btn-success"%>
     <%end%>
   </div>
@@ -51,7 +52,7 @@
           <td>
           <%=form_with model: @order, url: admin_order_path(@order.id), local:true do |f|%>
             <%=f.fields_for :order_item do |order_item_form| %>
-              <%= order_item_form.select :making_status, { '制作待ち':'production_pending', '製作中':'in_production', '制作完了':'production_complete', '制作不可':'production_not_possible'}, {selected: 'production_not_possible'}%>
+              <%= order_item_form.select :making_status, {  '制作不可': 'production_not_possible', '制作待ち': 'production_pending', '製作中': 'in_production', '制作完了': 'production_complete',}%>
               <%= order_item_form.hidden_field :id, value: order_item.id %>
               <%= f.submit "更新",class:"btn btn-success"%>
             <%end%>

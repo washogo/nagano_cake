@@ -37,7 +37,7 @@ class Public::OrdersController < ApplicationController
       @order_item.order_id=@order.id
       @order_item.item_id=cart_item.item_id
       @order_item.save
-  end
+    end
 
     CartItem.destroy_all
     redirect_to orders_completed_path
