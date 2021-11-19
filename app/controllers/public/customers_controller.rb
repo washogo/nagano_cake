@@ -15,11 +15,14 @@ class Public::CustomersController < ApplicationController
   end
 
   def cancel
+    @customer=current_customer
   end
 
   def quit
     @customer=current_customer
-    @customer.update_attribute(is_active: false)
+    @customer.is_active=params[:customer][:is_active]
+    @customer.update(customer_params)
+    reset_session
     redirect_to root_path
   end
 
