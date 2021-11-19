@@ -17,6 +17,11 @@ ja:
         production_complete: '制作完了'
         production_not_possible: '制作不可'
 
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+
 #ja: # 日本語の設定を行う
   #enums: # enumの設定を行う
     #[モデル名]:

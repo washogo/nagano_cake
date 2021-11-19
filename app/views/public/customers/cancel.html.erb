@@ -1,4 +1,4 @@
-
+<%=render 'public/header_log_in'%>
 <div class="container">
   <div class="row pt-5">
     <p class="h4 col-3 mx-auto pt-5 font-weight-bold">本当に退会しますか？</p>
@@ -12,7 +12,10 @@
   <div class="row mt-5">
     <div class="col">
       <%=link_to "退会しない",current_customer_path,class:"btn btn-primary col-2 offset-md-4"%>
-      <%=link_to "退会する",current_customer_quit_path,method: :patch,class:"btn btn-danger col-2 ml-2"%>
+      <%=form_with model:@customer,current_customer_quit_path,local:true do |f|%>
+        <%=f.hidden_field :is_active, :value => false%>
+        <%=f.submit "退会する",class:"btn btn-danger col-2"%>
+      <%end%>
     </div>
   </div>
 </div>

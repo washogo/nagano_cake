@@ -11,10 +11,10 @@ before_action :correct_customer, only:[:update]
     @item=Item.find(params[:cart_item][:item_id])
     @cart_item.item_id=@item.id
 
-    if CartItem.find_by(item_id: @item.id)
-      @cart_item_present=CartItem.find_by(item_id: @item.id)
-      _amounts = @cart_item_present.amount + @cart_item.amount.to_i
-      @cart_item_present.update_attribute(:amount, _amounts)
+    if current_customer.cart_items.find_by(item_id: params[:cart_item][:item_id]).present?
+      _cart_item=current_customer.cart_items.find_by(item_id: params[:cart_item][:item_id])
+      _cart_item.amount += params[:cart_item][:amount].to_i
+      _cart_item.save
     else
       @cart_item.save
     end
