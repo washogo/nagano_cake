@@ -34,7 +34,7 @@
           </td>
           <td>
           <%=form_with model:cart_item,local:true do |f|%>
-            <%=f.select :amount,options_for_select((1..23).to_a),prompt:"個数選択",class:"form-control"%>
+            <%=f.select :amount,*[1..50]%>
             <%=f.submit "変更",class:"btn btn-success"%>
           <%end%>
           </td>

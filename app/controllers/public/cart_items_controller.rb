@@ -10,7 +10,6 @@ before_action :correct_customer, only:[:update]
     @cart_item.customer_id=current_customer.id
     @item=Item.find(params[:cart_item][:item_id])
     @cart_item.item_id=@item.id
-
     if current_customer.cart_items.find_by(item_id: params[:cart_item][:item_id]).present?
       _cart_item=current_customer.cart_items.find_by(item_id: params[:cart_item][:item_id])
       _cart_item.amount += params[:cart_item][:amount].to_i
